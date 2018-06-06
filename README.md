@@ -37,7 +37,7 @@ Use reddit.clj in your clojure code:
 (reddit/submit-link rc "title" "url" "subreddit-name")
 ```
 
-Check detailed API document [here](http://sunng87.github.com/reddit.clj/)
+Check detailed API document [here](https://sunng87.github.com/reddit.clj/)
 
 ## License
 

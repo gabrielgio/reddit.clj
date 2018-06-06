@@ -1,4 +1,5 @@
 pom.xml
+.idea
 *jar
 /lib/
 /classes/
@@ -6,3 +7,6 @@ pom.xml
 .lein-failures
 *.swp
 autodoc/**
+*.iml
+target/
+
