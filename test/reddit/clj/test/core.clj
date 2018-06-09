@@ -31,7 +31,7 @@
 
 (deftest test-search
   (let [results (search r "java")]
-    (is (not (empty? results) ))))
+    (is (not (empty? results)))))
 
 (deftest test-mine
   (let [rdts (mine r)]

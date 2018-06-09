@@ -5,8 +5,8 @@
 (defprotocol RedditChannels
   ^{
       :private true
-      :doc "The reddit web API interfaces for reading data from reddit"
-     }
+      :doc "The reddit web API interfaces for reading data from reddit"}
+
   (reddits 
     [this rname] [this rname rcount after]
     "Retrieve reddits from subreddit")
@@ -74,8 +74,8 @@
 (defprotocol RedditOperations  
   ^{
       :private true
-      :doc "The reddit web API interfaces for writing data into reddit"
-   }
+      :doc "The reddit web API interfaces for writing data into reddit"}
+
   (vote-up
     [this id]
     "Vote up a comment or post")
@@ -182,12 +182,12 @@
 (defn login "Login to reddit, return cookie as user credential"
   ([] (RedditClient. nil nil))
   ([user passwd]
-     (if (nil? user)
-       (RedditClient. nil nil)
-       (let [userdata (client/login user passwd)]
-         (if (nil? userdata)
-           (RedditClient. nil nil)
-           (RedditClient. (:cookies userdata) (:modhash userdata)))))))
+   (if (nil? user)
+     (RedditClient. nil nil)
+     (let [userdata (client/login user passwd)]
+       (if (nil? userdata)
+         (RedditClient. nil nil)
+         (RedditClient. (:cookies userdata) (:modhash userdata)))))))
   
 (extend-type RedditClient
   RedditOperations
