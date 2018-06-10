@@ -21,9 +21,9 @@
     (is (= "sunng.info" (:domain (first rdts))))))
 
 (deftest test-info
-  (let [rdts (info r "https://sunng.info/blog/2011/06/jip-embed-on-the-fly-classpath-resolution-for-jython/")]
+  (let [rdts (info r "https://www.imgur.com")]
     (is (< 0 (count rdts)))
-    (is (= "sunng.info" (:domain (first rdts))))))
+    (is (= "imgur.com" (:domain (first rdts))))))
 
 (deftest test-me
   (let [userinfo (me r)]
@@ -38,7 +38,7 @@
     (is (<= 1 (count rdts)))))
 
 (deftest test-votes
-  (is (true? (vote-up r "t3_l7kwb"))))
+  (is (true? (vote-up r "t3_8q221b"))))
 
 (deftest test-thing-type
   (is (= "comment" (thing-type "t1_c26zchy")))

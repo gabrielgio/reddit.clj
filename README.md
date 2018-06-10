@@ -2,14 +2,14 @@
 
 A reddit api wrapper for clojure
 
-Note that this project is no longer maintained. Feel free to fork it and continue.
+This project is a fork from [reddit.clj](https://github.com/sunng87/reddit.clj)
 
 ## Usage
 
 Declare reddit.clj in your project.clj
 
     (defproject xxxx "1.0.0-SNAPSHOT"
-      :dependencies [[reddit.clj "0.4.0"]])
+      :dependencies [[reddit.clj "0.4.2"]])
 
 Use reddit.clj in your clojure code:
 

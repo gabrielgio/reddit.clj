@@ -9,4 +9,6 @@ pom.xml
 autodoc/**
 *.iml
 target/
+pom.xml.asc
+.nrepl-port
 
